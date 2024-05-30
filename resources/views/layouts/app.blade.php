@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a href="{{ route('admin.role.index') }}" class="nav-link">Role</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/admin-laratrust') }}" class="nav-link">Laratrust Admin Panel</a>
+                        </li>
                         @endrole
                     </ul>
 

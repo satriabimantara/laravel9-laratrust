@@ -268,7 +268,7 @@ return [
         | Turn this value to false if you don't want to use Laratrust admin panel
         |
         */
-        'register' => false,
+        'register' => true,
 
         /*
         |--------------------------------------------------------------------------
@@ -280,7 +280,7 @@ return [
         |
         */
         'domain' => env('LARATRUST_PANEL_DOMAIN', env('LARATRUST_PANEL_DOMAIN', (app()->runningInConsole() === false) ? request()->getHost() : 'localhost')),
-        
+
         /*
         |--------------------------------------------------------------------------
         | Laratrust Panel Path
@@ -290,7 +290,7 @@ return [
         | will be accessible from.
         |
         */
-        'path' => 'laratrust',
+        'path' => 'admin-laratrust',
 
         /*
         |--------------------------------------------------------------------------
@@ -300,7 +300,7 @@ return [
         | The route where the go back link should point
         |
         */
-        'go_back_route' => '/',
+        'go_back_route' => '/home',
 
         /*
         |--------------------------------------------------------------------------
