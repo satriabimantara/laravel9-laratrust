@@ -30,7 +30,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        @role('superadmin')
+                        <li class="nav-item">
+                            <a href="{{ route('admin.user.index') }}" class="nav-link">User</a>
+                        </li>
+                        @endrole
                     </ul>
 
                     <!-- Right Side Of Navbar -->
