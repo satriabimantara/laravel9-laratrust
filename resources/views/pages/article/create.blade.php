@@ -58,8 +58,9 @@
                                 @enderror
                             </div>
                         </div>
-
-
+                        @endrole
+                        @role(['user'])
+                        <input type="hidden" name="published" value="0">
                         @endrole
 
                         <div class="form-group row mb-0">

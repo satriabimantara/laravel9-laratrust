@@ -75,7 +75,7 @@ class ArticleController extends Controller
 
             if (
                 request()->user()->hasRole(['superadmin', 'admin']) ||
-                request()->user()->isAbleToAndOwns('update-articles', $article)
+                request()->user()->isAbleToAndOwns('articles-update', $article)
             ) {
                 return view('pages.article.edit', compact('article'));
             } else {
@@ -100,7 +100,7 @@ class ArticleController extends Controller
 
             if (
                 request()->user()->hasRole(['superadmin', 'admin']) ||
-                request()->user()->isAbleToAndOwns('update-articles', $article)
+                request()->user()->isAbleToAndOwns('articles-update', $article)
             ) {
                 $this->validate($request, [
                     'title' => ['required', 'string', 'max:255'],
