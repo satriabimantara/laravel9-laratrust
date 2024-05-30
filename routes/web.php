@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\PermissionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,5 @@ Route::name('admin.')
     ->middleware(['auth', 'role:superadmin|admin'])
     ->group(function () {
         Route::resource('user', UserController::class);
+        Route::resource('permission', PermissionController::class);
     });
