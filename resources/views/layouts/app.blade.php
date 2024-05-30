@@ -44,6 +44,9 @@
                             <a href="{{ url('/admin-laratrust') }}" class="nav-link">Laratrust Admin Panel</a>
                         </li>
                         @endrole
+                        <li class="nav-item">
+                            <a href="{{ route('article.index') }}" class="nav-link">Article</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
